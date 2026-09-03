@@ -65,8 +65,7 @@ shopgenius/
 │   ├── entries/
 │   └── case-studies/
 │       ├── README.md
-│       ├── _template.md
-│       └── studies/
+│       └── _template.md
 │
 ├── explorations/
 │   ├── README.md
@@ -127,8 +126,8 @@ our thesis that we need to know *why* it worked or failed.
 | `_template.md` | Quick-entry format: the mechanic stripped of polish, the job it does, what it costs to produce, relevance to us, and an Adopt / Adapt / Watch / Avoid verdict. |
 | `entries/` | Quick logs, one mechanic each, named `YYYY-MM-DD-slug.md`. |
 | `case-studies/README.md` | Sourcing rules — first-party vs. independent claims, "shipped" vs. "worked," and why discontinued products are our most valuable evidence. |
-| `case-studies/_template.md` | Teardown structure ending in implications tied to assumption IDs, plus a confidence statement separating documented from inferred. |
-| `case-studies/studies/` | Studies live here as `NN-slug.md`. |
+| `case-studies/_template.md` | Teardown structure ending in implications tied to assumption IDs, plus a confidence statement separating documented from inferred. Duplicate it in place and rename to `NN-slug.md`. |
+| `case-studies/NN-slug.md` | The studies themselves, sitting alongside the template and README. |
 
 ## `explorations/`
 
