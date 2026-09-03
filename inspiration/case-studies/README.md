@@ -16,7 +16,8 @@ underrepresented because nobody writes case studies about their own retreats.
 
 ## Structure
 
-Copy `_template.md` into `studies/` as `NN-slug.md`.
+Duplicate `_template.md` in this folder and rename it to `NN-slug.md`. Studies live here
+alongside it — leave the template in place.
 
 If a study started life as a quick entry in `../entries/`, leave the entry in place and add a
 pointer to the study rather than deleting it — the short version stays useful for scanning.
