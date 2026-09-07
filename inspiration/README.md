@@ -15,6 +15,8 @@ inspiration/
 │       └── *.jpg / *.png ← images live next to it
 ├── case-studies/     Deep teardowns — only when something is close enough to our thesis
 │                     that we need to know WHY it succeeded or failed. Rare by design.
+├── xhs-seeding-posts/  Corpus: what XHS 种草 posts look like as screens (scraped,
+│                     third-party content — reference only, see its README).
 └── _inbox/           Drop zone. Raw images/links with no writing required — Claude turns
                       them into entries. Anything here is unprocessed by definition.
 ```

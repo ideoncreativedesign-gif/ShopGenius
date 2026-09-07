@@ -1,0 +1,12 @@
+{
+  "name": "xhs-collector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "小红书美妆种草帖采集（截图+原图），供 UI 风格研究",
+  "scripts": {
+    "collect": "node collect.js"
+  },
+  "dependencies": {
+    "playwright-core": "^1.49.0"
+  }
+}
