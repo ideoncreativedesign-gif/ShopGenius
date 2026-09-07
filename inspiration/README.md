@@ -1,58 +1,52 @@
-# Inspiration
+# Inspiration / Lookbook
 
-A shared library of things that moved us — and, more importantly, *why*.
+Shared library of things that moved us — with the mechanic named.
 
-A link with no analysis is a bookmark. This folder is for bookmarks that have been thought
-about. The bar for adding anything: **you can name the mechanic underneath the polish.**
+The bar for adding anything: **you can name the mechanic underneath the polish.**
+A link with no analysis is a bookmark; this folder is for bookmarks that have been thought about.
 
-## Two depths
+## Structure
 
 ```text
 inspiration/
-├── entries/          Quick log — one mechanic, ten focused minutes
-└── case-studies/     Deep teardown — what happened, why, and what it means for us
+├── entries/          One folder per item. Screenshots + a named mechanic + 1–2 lines of insight.
+│   └── YYYY-MM-DD-short-slug/
+│       ├── README.md     ← the entry (GitHub renders it when you open the folder)
+│       └── *.jpg / *.png ← images live next to it
+├── case-studies/     Deep teardowns — only when something is close enough to our thesis
+│                     that we need to know WHY it succeeded or failed. Rare by design.
+└── _inbox/           Drop zone. Raw images/links with no writing required — Claude turns
+                      them into entries. Anything here is unprocessed by definition.
 ```
 
-Start everything as an **entry**. Promote it to a **case study** when it's close enough to our
-thesis that we need to understand why it succeeded or failed, not just that it exists.
+No index file to maintain — dated folder names sort themselves and the folder listing *is* the index.
 
-Promotion is a real threshold, not a formality — a case study is a few hours of sourcing. Most
-inspiration should stay an entry, and that's the folder working correctly.
+## Entry format (light on purpose)
 
-| | Entry | Case study |
-|---|---|---|
-| Effort | ~10 min | A few hours |
-| Question | What's the mechanic? | Why did it work or fail? |
-| Sources | The thing itself | First-party + independent, cited |
-| Output | Adopt / Adapt / Watch / Avoid | Implications for our assumptions |
+```markdown
+# <Mechanic name — English, so titles scan for everyone>
 
-## How to add an entry
+**Date:** YYYY-MM-DD · **By:** name · **Source:** URL / app / "screenshot, origin unverified"
 
-1. Copy `_template.md` into `entries/` as `YYYY-MM-DD-short-slug.md`.
-2. Fill it in. Ten focused minutes beats an hour of screenshots.
-3. Add a row to the index below.
+![](01.jpg)
 
-For a case study, see `case-studies/README.md`.
+One or two lines: what the mechanic actually is, and why it caught you.
+Body in whatever language you write fastest.
 
-## The one rule
+<!-- optional, one line -->
+**Verdict:** Adopt / Adapt / Watch / Avoid — why.
+```
 
-Separate **what it does** from **why we like it** from **what we'd have to believe for it to
-work for ShopGenius**. Most inspiration fails at the third question, and finding that out early
-is the point of writing it down.
+That's the whole template. If an item has multiple forms (e.g. one site, nine layouts),
+keep them as sections in one entry.
 
-## Index
+## Rules
 
-Keep this table current — it's the browsable surface. Mark case studies with `★`.
-
-| Date | Item | Depth | Mechanic | Relevance |
-|---|---|---|---|---|
-| 2026-09-03 | [Branching video commerce](entries/2026-09-03-branching-video-commerce.md) | Entry | Choice-driven narrative | Core thesis |
-
-## Tags we use
-
-`in-image` · `in-video` · `branching` · `agentic` · `provenance` · `comparison` ·
-`intent-elicitation` · `motion` · `anti-pattern`
-
-Log anti-patterns too. Knowing precisely why something feels manipulative is more useful than
-another example of something that feels nice — and for this project it's directly load-bearing,
-since `docs/09-trust-provenance-commerce.md` needs concrete examples to argue against.
+1. **Name the mechanic in the title, in English.** "Focus by fading siblings" beats "cool gallery".
+2. **Dropping an image is enough.** Ten minutes of writing is the ceiling, not the floor —
+   if all you have is a screenshot, put it in `_inbox/` (or hand it to Claude) and move on.
+3. **Mark what's unverified.** Second-hand screenshots, unconfirmed origins — say so in Source.
+4. **Anti-patterns count.** Knowing precisely why something feels manipulative is more useful
+   than another example of something that feels nice.
+5. Insights extracted from entries graduate elsewhere (each side's own knowledge base / docs);
+   this folder stays a material library.
